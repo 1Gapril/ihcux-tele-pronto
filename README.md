@@ -129,6 +129,6 @@ Entre as principais decisões adotadas:
 ---
 
 ## 📷 Protótipo Desenvolvido
+<img width="1644" height="608" alt="image" src="https://github.com/user-attachments/assets/9bce7b2c-f303-413e-8f5b-9940b3a198a3" />
 
-![Protótipo do TelePronto](prototipo/prototipo.png)
 ```

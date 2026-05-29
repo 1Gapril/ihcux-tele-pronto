@@ -1,43 +1,134 @@
-# TelePronto - Prototipagem de Baixa Fidelidade (IHC & UX)
+# 🏥 TelePronto - Protótipo de Baixa Fidelidade
 
 ## 👥 Integrantes
-* *Cauã Mendes* - RA: 326141078
-* *Fábio Henrique Zanini Ferreira* - RA: 326113387
-* *Gabriel Ferreira de Souza* - RA: 325140970
-* *Lucas Henrique Miranda* - RA: 325131396
-* *Curso:* Análise e Desenvolvimento de Sistemas (ADS)
-* *Instituição:* Centro Universitário UNA – Belo Horizonte
-* *Matéria:* Interação Humano Computador e UX
-* *Professor:* Daniel Henrique Matos de Paiva
+* **Cauã Mendes** - RA: 326141078
+* **Fábio Henrique Zanini Ferreira** - RA: 326113387
+* **Gabriel Ferreira de Souza** - RA: 325140970
+* **Lucas Henrique Miranda** - RA: 325131396
 
-## 🩺 Sobre o Projeto
-O **TelePronto** é um aplicativo de saúde desenvolvido para o Hospital Universitário com foco em telemedicina para casos leves. O objetivo principal do design é transmitir calma, confiança e extrema simplicidade, eliminando ruídos visuais para atender usuários fragilizados, doentes ou da terceira idade.
+**Curso:** Análise e Desenvolvimento de Sistemas (ADS)
 
----
+**Instituição:** Centro Universitário UNA – Belo Horizonte
 
-## 👁️ Análise de Acessibilidade
-Para mitigar os problemas de usuários com **visão turva**, **mal-estar** ou **dedos trêmulos**, aplicamos as seguintes diretrizes de IHC:
-* **Áreas de Clique Generosas (Targets):** Todos os botões interativos possuem altura mínima de 48px a 64px e espaçamento (padding) de no mínimo 24px entre eles, evitando que dedos trêmulos cliquem no botão errado.
-* **Tipografia e Contraste:** Uso de fontes sem serifa em tamanhos ampliados (mínimo de 18px para textos informativos e 24px para botões). O layout prioriza o alto contraste básico para leitura sob qualquer condição de luz.
-* **Navegação Linear:** Evitamos menus complexos, hambúrgueres ocultos ou gestos de "arrastar" (swipe). A navegação é estritamente vertical e baseada em toques diretos.
+**Matéria:** Interação Humano Computador e UX
+
+**Professor:** Daniel Henrique Matos de Paiva
 
 ---
 
-## 🚀 Fluxo Crítico: Consulta de Urgência
-O caminho do usuário para iniciar o atendimento médico imediato foi reduzido ao menor número de passos possível:
-1. **Passo 1 (Home):** O usuário visualiza o botão gigante `[🚨 CONSULTAR AGORA]` logo ao abrir o app e realiza o primeiro toque.
-2. **Passo 2 (Triagem Rápida):** Uma tela limpa pergunta o sintoma principal. O usuário seleciona uma opção em formato de lista vertical e clica em `[AVANÇAR]`.
-3. **Passo 3 (Sala de Espera):** O sistema direciona o usuário imediatamente para a fila virtual, exibindo de forma explícita o tempo estimado e a posição na fila.
+## 📌 Sobre o Projeto
+
+O **TelePronto** é um protótipo de baixa fidelidade desenvolvido para a disciplina de Interação Humano Computador e UX com o objetivo de simular uma plataforma de atendimento médico remoto.
+
+A proposta do aplicativo é reduzir filas presenciais em hospitais e permitir que usuários realizem triagens rápidas, consultas online, acesso a receitas digitais e gerenciamento de medicamentos de forma simples, intuitiva e acessível.
+
+O protótipo foi desenvolvido no Miro utilizando wireframes simples, priorizando clareza visual, organização da informação e facilidade de uso.
 
 ---
 
-## 🛡️ Prevenção de Erros
-Doentes ou idosos podem derrubar o celular ou clicar na tela por reflexo. Para evitar que a consulta seja encerrada por acidente:
-* **Barreira de Confirmação:** O botão de encerrar chamada `[❌ DESCONECTAR]` exige uma confirmação dupla. Ao ser clicado, o sistema abre um pop-up centralizado ocupando a tela com a mensagem: *"Você tem certeza que deseja encerrar a consulta?"* com as opções explícitas `[Sim, Sair]` e `[Não, Continuar]`.
-* **Distanciamento de Comandos:** O botão de desligar fica isolado no topo da interface ou distante dos botões de controle cotidianos (como o botão de tirar o som ou ativar câmera).
+## 🧠 Contexto de Uso
+
+O aplicativo foi pensado para usuários que podem estar em situações de vulnerabilidade física ou emocional, como dores, ansiedade, mal-estar ou dificuldades momentâneas de concentração.
+
+Por esse motivo, o foco do design foi minimizar distrações e facilitar a navegação, permitindo que o usuário consiga realizar ações importantes rapidamente, mesmo em momentos de estresse.
 
 ---
 
-## ✨ Desafios Extras Implementados
-* **Fluxo de Dependente:** Na tela *Home*, há um seletor rápido no topo com a foto/nome do usuário ativo. Ao clicar, abre-se uma gaveta simples para alternar o perfil para o modo "Infantil (Filho/Dependente)", alterando o contexto das consultas do aplicativo.
-* **Modo Baixa Conexão:** Caso a oscilação da internet seja detectada na Sala de Espera ou Chamada, uma tarja amarela de aviso no topo da tela informa de forma clara: *"Internet fraca. Desligando o vídeo para priorizar o áudio com o médico."* O sistema faz o downgrade técnico sem interromper a comunicação do paciente.
+## 📱 Fluxo Principal do Aplicativo
+
+O fluxo principal do TelePronto foi estruturado da seguinte maneira:
+
+1. **Home** — acesso rápido às principais funcionalidades do aplicativo;
+2. **Triagem** — seleção e descrição dos sintomas do usuário;
+3. **Sala de Espera** — exibição da fila virtual e tempo estimado;
+4. **Consulta por Vídeo** — realização do atendimento remoto com o médico;
+5. **Receita Digital** — visualização da prescrição médica digital;
+6. **Alarme** — configuração de lembretes para medicação.
+
+O objetivo foi criar um fluxo simples, rápido e intuitivo para o usuário.
+
+---
+
+## 🚨 Fluxo Crítico — Consulta de Urgência
+
+O caminho principal para iniciar rapidamente uma consulta médica foi projetado para exigir o menor número possível de interações.
+
+As principais decisões adotadas foram:
+
+* Botão “Consulta Agora” em destaque na tela inicial;
+* Navegação simplificada entre triagem e fila virtual;
+* Exibição clara do tempo estimado de espera;
+* Feedback visual constante sobre o estado da consulta;
+* Interface objetiva durante a videochamada.
+
+---
+
+## ♿ Análise de Acessibilidade
+
+O protótipo foi desenvolvido considerando usuários idosos ou pessoas em situação de mal-estar.
+
+### 🔍 Legibilidade
+* Textos grandes e organizados;
+* Alto contraste entre elementos importantes;
+* Hierarquia visual clara;
+* Pouca poluição visual.
+
+### 👆 Facilidade de Interação
+* Botões com áreas de clique maiores;
+* Espaçamento adequado entre elementos;
+* Navegação simplificada para reduzir erros de toque.
+
+### 🧠 Redução de Carga Cognitiva
+* Poucas informações por tela;
+* Ícones acompanhados de texto;
+* Fluxos simples e previsíveis;
+* Organização visual padronizada.
+
+---
+
+## 🛡 Prevenção de Erros
+
+Por se tratar de um aplicativo relacionado à saúde, a prevenção de erros foi tratada como prioridade.
+
+### ❌ Encerramento Acidental da Consulta
+* O botão de encerrar chamada foi isolado visualmente;
+* O sistema solicita confirmação antes de sair da consulta;
+* A ação crítica exige confirmação do usuário.
+
+### ⚠ Feedback do Sistema
+* O usuário consegue identificar facilmente em qual etapa está;
+* A fila virtual informa tempo estimado;
+* A interface mostra quando o médico ainda não entrou na chamada.
+
+### 📋 Clareza das Informações
+* Receitas digitais organizadas visualmente;
+* Informações importantes destacadas;
+* Fluxo de navegação consistente entre telas.
+
+---
+
+## 🎨 Decisões de UX e IHC
+
+As decisões de UX foram baseadas nos princípios de Interação Humano Computador, buscando reduzir esforço cognitivo e tornar a experiência mais intuitiva.
+
+Entre as principais decisões adotadas:
+
+* Hierarquia visual clara;
+* Navegação simplificada;
+* Padronização entre telas;
+* Feedback visual constante;
+* Clareza nas ações críticas;
+* Redução de distrações visuais.
+
+---
+
+## 🛠 Ferramenta Utilizada
+
+* **Miro** — desenvolvimento do protótipo de baixa fidelidade.
+
+---
+
+## 📷 Protótipo Desenvolvido
+
+![Protótipo do TelePronto](prototipo/prototipo.png)
+```
